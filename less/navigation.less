@@ -15,6 +15,7 @@
     justify-content: space-around;
     margin: 5px auto;
     a {
+        padding: 5px;
         @media @phone {
             font-size: 1em;
         }
@@ -24,4 +25,37 @@
         text-decoration: none;
         color: black;
     }
+
+    a:hover {
+        -webkit-animation-name: navColorChanger;
+        -webkit-animation-duration: 1.5s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-direction: alternate;
+        animation-name: navColorChanger;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    @-webkit-keyframes navColorChanger {
+        from {
+          background-color: white;
+          color: black;
+        }
+        to {
+          background-color: black;
+          color: white;
+        }
+      }
+      
+      @keyframes navColorChanger {
+        from {
+          background-color: white;
+          color: black;
+        }
+        to {
+          background-color: black;
+          color: white;
+        }
+      }
 }
