@@ -1,1 +1,17 @@
 // Mixins Here
+
+.flex-center() {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-wrap() {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.button-style(@text-color, @background-color, @alignment) {
+    color: @text-color;
+    background-color: @background-color;
+    text-align: @alignment;
+}
